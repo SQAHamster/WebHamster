@@ -1,0 +1,33 @@
+{
+  "name": "webhamster",
+  "version": "1.0.0",
+  "description": "Web based UI for Hamster Simulator",
+  "main": "out/index.js",
+  "types": "out/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "serve": "http-server -p 8081",
+    "start": "npm run build && npm run serve",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ModellbahnFreak/WebHamster.git"
+  },
+  "files": [
+    "out/**/*.js",
+    "out/**/*.d.ts",
+    "res/**/*",
+    "onlyPlayfield.html"
+  ],
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/ModellbahnFreak/WebHamster/issues"
+  },
+  "homepage": "https://github.com/ModellbahnFreak/WebHamster#readme",
+  "devDependencies": {
+    "http-server": "^0.12.3",
+    "typescript": "^4.3.5"
+  }
+}
